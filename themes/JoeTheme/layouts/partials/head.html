@@ -21,6 +21,12 @@
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/skeleton.css">
 
+  {{ $skeletonstyle := resources.Get "css/skeleton.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $skeletonstyle.Permalink }}">
+  {{ $normalizestyle := resources.Get "css/normalize.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $normalizestyle.Permalink }}">
+  
+
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="apple-touch-icon" sizes="180x180" href="/header-icon/favicon/apple-touch-icon.png">
