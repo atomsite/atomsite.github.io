@@ -1,1 +1,83 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tags on Atomsite</title><link>/tags/</link><description>Recent content in Tags on Atomsite</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 24 Dec 2021 02:39:42 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml"/><item><title>CWBs</title><link>/tags/cwbs/</link><pubDate>Fri, 24 Dec 2021 02:39:42 +0000</pubDate><guid>/tags/cwbs/</guid><description/></item><item><title>PhD</title><link>/tags/phd/</link><pubDate>Fri, 24 Dec 2021 02:39:42 +0000</pubDate><guid>/tags/phd/</guid><description/></item><item><title>Wolf-Rayet</title><link>/tags/wolf-rayet/</link><pubDate>Fri, 24 Dec 2021 02:39:42 +0000</pubDate><guid>/tags/wolf-rayet/</guid><description/></item><item><title>Foo</title><link>/tags/foo/</link><pubDate>Thu, 23 Dec 2021 16:44:57 +0000</pubDate><guid>/tags/foo/</guid><description/></item><item><title>Hello</title><link>/tags/hello/</link><pubDate>Thu, 23 Dec 2021 16:44:57 +0000</pubDate><guid>/tags/hello/</guid><description/></item><item><title>landscape</title><link>/tags/landscape/</link><pubDate>Sun, 28 Nov 2021 02:23:57 +0000</pubDate><guid>/tags/landscape/</guid><description/></item><item><title>urban</title><link>/tags/urban/</link><pubDate>Sun, 28 Nov 2021 02:23:57 +0000</pubDate><guid>/tags/urban/</guid><description/></item><item><title>nature</title><link>/tags/nature/</link><pubDate>Sun, 21 Nov 2021 01:56:06 +0000</pubDate><guid>/tags/nature/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Atomsite</title>
+    <link>/tags/</link>
+    <description>Recent content in Tags on Atomsite</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 24 Dec 2021 02:39:42 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CWBs</title>
+      <link>/tags/cwbs/</link>
+      <pubDate>Fri, 24 Dec 2021 02:39:42 +0000</pubDate>
+      
+      <guid>/tags/cwbs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PhD</title>
+      <link>/tags/phd/</link>
+      <pubDate>Fri, 24 Dec 2021 02:39:42 +0000</pubDate>
+      
+      <guid>/tags/phd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wolf-Rayet</title>
+      <link>/tags/wolf-rayet/</link>
+      <pubDate>Fri, 24 Dec 2021 02:39:42 +0000</pubDate>
+      
+      <guid>/tags/wolf-rayet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Foo</title>
+      <link>/tags/foo/</link>
+      <pubDate>Thu, 23 Dec 2021 16:44:57 +0000</pubDate>
+      
+      <guid>/tags/foo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hello</title>
+      <link>/tags/hello/</link>
+      <pubDate>Thu, 23 Dec 2021 16:44:57 +0000</pubDate>
+      
+      <guid>/tags/hello/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>landscape</title>
+      <link>/tags/landscape/</link>
+      <pubDate>Sun, 28 Nov 2021 02:23:57 +0000</pubDate>
+      
+      <guid>/tags/landscape/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>urban</title>
+      <link>/tags/urban/</link>
+      <pubDate>Sun, 28 Nov 2021 02:23:57 +0000</pubDate>
+      
+      <guid>/tags/urban/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nature</title>
+      <link>/tags/nature/</link>
+      <pubDate>Sun, 21 Nov 2021 01:56:06 +0000</pubDate>
+      
+      <guid>/tags/nature/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
