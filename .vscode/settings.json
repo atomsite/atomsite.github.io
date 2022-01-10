@@ -1,0 +1,6 @@
+{
+  "markdown-preview-enhanced.imageFolderPath": "/assets/images",
+  "markdown-image.local.path": "/static",
+  "markdown-image.local.referencePath": "/",
+  "markdown-image.base.fileNameFormat": "${prompt}"
+}

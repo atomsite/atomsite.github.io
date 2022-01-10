@@ -1,0 +1,30 @@
+{{ partial "head.html" }}
+
+<!-- Primary Page Layout
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+<div class="container">
+  <hr>
+  <div class="row">
+    <div class="twelve columns" style="margin-top: 0%">
+      <h2><a href="/"><img style="vertical-align:middle; height: 2em;" src='/header-icon/me.webp' onmouseover="this.src='/header-icon/soney.webp';" onmouseout="this.src='/header-icon/me.webp';" /></a> <a href="/" style="text-decoration: none;">Atomsite(.github.io)</a></span></h2>
+
+      <nav>
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main }}
+        <a class="sidebar-nav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+        {{ end }}
+
+        <p style="margin-bottom: 0;">
+          <a href="https://github.com/atomsite/"><img class="nav-icon" src="/header-icon/github.svg" alt=""></a>
+
+          <a href="https://raw.githubusercontent.com/atomsite/curriculum-vitae/main/cv.pdf"><img class="nav-icon" src="/header-icon/cv.svg" alt=""></a>
+
+          <a href="https://orcid.org/0000-0002-5160-8871"><img class="nav-icon" src="/header-icon/education.svg" alt=""></a>
+        </p>
+      </nav>
+    </div>
+  </div>
+  <hr>
+</div>

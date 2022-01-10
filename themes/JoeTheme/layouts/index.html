@@ -1,0 +1,54 @@
+{{ partial "header.html" . }}
+
+<div class="container">
+  <div class="row">
+    <p>
+      <i>Hello there! My name is Joseph.</i>
+    </p>
+    <p>
+      I am an experimental Astrophysicist with research interests in Colliding Wind Binary systems, numerical simulation and interstellar dust.
+    </p>
+    <p>
+      I also tend to publish some of my photos here, as well as my other projects.
+    </p>
+  </div>
+
+  <div class="row">
+    <div class="four columns">
+      <h5>
+        Recent Posts
+      </h5>
+      {{ range first 5 ( where .Site.RegularPages "Section" "posts" ) }}
+        <article class="list">
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            <time>{{ .Date.Format "02/01/2006" }}</time>
+        </article>
+      {{ end }}
+    </div>
+    <div class="four columns">
+      <h5>
+        Recent Projects
+      </h5>
+      {{ range first 5 ( where .Site.RegularPages "Section" "projects" ) }}
+        <article class="list">
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            <time>{{ .Date.Format "02/01/2006" }}</time>
+        </article>
+      {{ end }}
+    </div>
+    <div class="four columns">
+      <h5>
+        Recent Photos
+      </h5>
+      {{ range first 5 ( where .Site.RegularPages "Section" "photos" ) }}
+        <article class="list">
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            <time>{{ .Date.Format "02/01/2006" }}</time>
+        </article>
+      {{ end }}
+    </div>
+  </div>
+  <p></p>
+</div>
+
+{{ partial "footer.html"}}
