@@ -5,10 +5,10 @@ tags: ["nature","landscape"]
 draft: false
 ---
 
-{{< photo shed />}}
+{{< photo shed "Lonely shed" />}}
 
-{{< photo horizon />}}
+{{< photo horizon "Stunning views of the Dales from the top of a hill" />}}
 
-{{< photo barn />}}
+{{< photo barn "Barnstorming" />}}
 
-{{< photo ruins />}}
+{{< photo ruins "Ruins" />}}

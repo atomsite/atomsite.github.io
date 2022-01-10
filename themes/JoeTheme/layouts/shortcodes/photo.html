@@ -6,7 +6,6 @@
 {{ .Scratch.Set "small" ($original.Resize "480x Lanczos webp photo") }}
 {{ .Scratch.Set "small-jpeg" ($original.Resize "480x Lanczos jpeg") }}
 
-
 {{ $big := .Scratch.Get "big" }}
 {{ $bigjpeg := .Scratch.Get "big-jpeg" }}
 {{ $small := .Scratch.Get "small" }}
@@ -14,40 +13,34 @@
 
 
 <figure style="padding-bottom: 10px; border-radius: 5px;">
-  <a href="{{$original}}" style="margin-bottom: -250px;">
-
-	<picture>
-		<source
-			srcset="{{ $big.RelPermalink }}"
-			media="(min-width: 720px)"
-			type="image/webp"
-		/>
-		<source
-			srcset="{{ $bigjpeg.RelPermalink }}"
-			media="(min-width: 720px)"
-			type="image/jpeg"
-		/>
-		<source
-			srcset="{{ $small.RelPermalink }}"
-			type="image/webp"
-		/>
-		<source
-			srcset="{{ $smalljpeg.RelPermalink }}"
-			type="image/jpeg"
-		/>
-		<img
-		  style="max-width: 100%; width: auto; height: auto; border-radius: 5px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px;"
-			src="{{ $smalljpeg.RelPermalink }}"
-			width="{{ $smalljpeg.Width }}"
-			height="{{ $smalljpeg.Height }}"
-			alt="{{ $description }}"
-		/>
-	</picture>
-
-
-	
-
-	
+  <a href="{{$original}}">
+		<picture>
+			<source
+				srcset="{{ $big.RelPermalink }}"
+				media="(min-width: 720px)"
+				type="image/webp"
+			/>
+			<source
+				srcset="{{ $bigjpeg.RelPermalink }}"
+				media="(min-width: 720px)"
+				type="image/jpeg"
+			/>
+			<source
+				srcset="{{ $small.RelPermalink }}"
+				type="image/webp"
+			/>
+			<source
+				srcset="{{ $smalljpeg.RelPermalink }}"
+				type="image/jpeg"
+			/>
+			<img
+				style="max-width: 100%; width: auto; height: auto; border-radius: 5px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px;"
+				src="{{ $smalljpeg.RelPermalink }}"
+				width="{{ $smalljpeg.Width }}"
+				height="{{ $smalljpeg.Height }}"
+				alt="{{ $description }}"
+			/>
+		</picture>
   </a>
 	<hr style="margin: 0px;">
 	<figcaption style="padding-left: 1em;">

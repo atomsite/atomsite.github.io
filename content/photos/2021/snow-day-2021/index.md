@@ -6,9 +6,11 @@ tags: ["urban","landscape"]
 
 {{< photo tracks "Snow caked trees by the train tracks" />}}
 
-{{< photo tetley "A place affectionately called murder alley" />}}
+{{< photo tetley "The Tetley Stadium, draped in snow" />}}
 
-{{< photo alley "Wide shot of the houses" />}}
+{{< photo alley "A place affectionately called murder alley" />}}
+
+{{< photo wide "Wide shot of the houses" />}}
 
 {{< photo ridge "Woodhouse ridge" />}}
 
