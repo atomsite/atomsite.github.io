@@ -12,6 +12,8 @@ tags: [""]
 
 {{< photo cityscape />}}
 
-{{< photo cityscape-2 />}}
+{{< photo horizon />}}
+
+{{< photo river />}}
 
 {{< photo cafe />}}
