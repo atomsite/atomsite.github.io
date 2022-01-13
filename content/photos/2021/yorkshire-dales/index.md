@@ -5,6 +5,16 @@ tags: ["nature","landscape"]
 draft: false
 ---
 
+
+
+{{< photo idyll "The Yorkshire Dales is probably one of the most idyllic places in The North" />}}
+
+{{< photo moss />}}
+
+{{< photo samba />}}
+
+{{< photo lock />}}
+
 {{< photo shed "Lonely shed" />}}
 
 {{< photo horizon "Stunning views of the Dales from the top of a hill" />}}

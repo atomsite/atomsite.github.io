@@ -36,23 +36,34 @@
 			<img
 				style="max-width: 100%; width: auto; height: auto; border-radius: 5px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px;"
 				src="{{ $smalljpeg.RelPermalink }}"
-				width="{{ $smalljpeg.Width }}"
-				height="{{ $smalljpeg.Height }}"
 				alt="{{ $description }}"
 				loading="lazy"
 			/>
 		</picture>
   </a>
 	<hr style="margin: 0px;">
-	<figcaption style="padding-left: 1em;">
+	<figcaption>
 	<small>
-	{{ with .Inner }}
-	{{ . }}
-	{{ else }}
 	<i>
-		{{ $description }}
+		{{ with .Inner }}
+		{{ . }}
+		{{ end }}
+		{{ with $description }}
+		{{ . }}
+		{{ with $original.Exif }}
+		<br>
+		{{ end }}
+		{{ end }}
+		{{ with $original.Exif }}
+		{{ with .Date }} 		<a href="{{$original}}"><img class="nav-icon" src="/icon/camera.svg" alt=""></a>
+		Taken {{ .Format "01/02/06" }}{{ end }}
+		{{ with .Tags.Model }} - {{ . }}{{ end }}
+		{{ with .Tags.FocalLength }} - {{ . }}mm{{ end }}
+		{{ with .Tags.ApertureValue }} - f{{ lang.NumFmt 1 . }}{{ end }}
+		{{ with .Tags.ExposureTime }}  - {{ . }}s{{ end }}
+		{{ with .Tags.ISOSpeedRatings }} - ISO {{ . }}{{ end }}
+		{{ end }}
 	</i>
-	{{ end }}
 	</small>
 </figcaption>
 <hr style="margin: 0px;">

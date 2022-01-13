@@ -14,3 +14,4 @@ tags: ["urban","landscape"]
 
 {{< photo ridge "Woodhouse ridge" />}}
 
+{{< photo friend "A friend." />}}
