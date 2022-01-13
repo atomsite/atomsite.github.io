@@ -50,12 +50,11 @@
 		{{ end }}
 		{{ with $description }}
 		{{ . }}
-		{{ with $original.Exif }}
-		<br>
-		{{ end }}
 		{{ end }}
 		{{ with $original.Exif }}
-		{{ with .Date }} 		<a href="{{$original}}"><img class="nav-icon" src="/icon/camera.svg" alt=""></a>
+		<hr style="margin: 0px; border-top: 0px; ">
+		<a href="{{$original}}"><img class="nav-icon" src="/icon/camera.svg" alt=""></a>
+		{{ with .Date }}
 		Taken {{ .Format "01/02/06" }}{{ end }}
 		{{ with .Tags.Model }} - {{ . }}{{ end }}
 		{{ with .Tags.FocalLength }} - {{ . }}mm{{ end }}

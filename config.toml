@@ -2,6 +2,8 @@ baseURL = ''
 languageCode = 'en-us'
 title = 'Atomsite'
 theme = ["JoeTheme","hugo-cite"]
+timeout = "21600s"
+
 
 [menu]
   [[menu.main]]
