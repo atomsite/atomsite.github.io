@@ -55,13 +55,13 @@
 
   <hr>
   <h2>Photos</h2>
-  
-  <div class="row">
+
+  <div class="row photowall">
     {{ range first 3 ( where .Site.RegularPages "Section" "photos" ) }}
       {{ partial "index-gallery.html" . }}
     {{ end }}
   </div>
-  <div class="row">
+  <div class="row photowall">
     {{ range first 3 ( after 3 (where .Site.RegularPages "Section" "photos" )) }}
       {{ partial "index-gallery.html" . }}
     {{ end }}
