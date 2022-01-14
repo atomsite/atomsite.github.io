@@ -13,7 +13,48 @@
     </p>
   </div>
 
+  <h2>
+    Recent Posts
+  </h2>
+
   <div class="row">
+    {{ range first 5 ( where .Site.RegularPages "Section" "posts" ) }}  
+      <hr>
+      <h4><a href="{{.Permalink}}">{{.Title}}</a></h4>
+      <small><p><i>{{.Date.Format "02/01/2006"}}</i></p></small>
+
+      {{ if isset .Params "thumb" }}
+      {{ partial "thumbnail.html" . }}
+      <br>
+      <small>
+        <a href="{{ .Permalink }}">
+            <i>
+                See more photos...
+            </i>
+        </a>
+      </small>
+      {{ else }}
+      <small>
+        <i>
+          {{ .Summary }}
+        </i>
+      </small>
+      <br>
+      <small>
+        <a href="{{ .Permalink }}">
+            <i>
+                Keep reading...
+            </i>
+        </a>
+      </small>
+      {{ end }}
+  
+    {{ end }}
+  </div>
+
+  
+
+  <!-- <div class="row">
     <div class="four columns">
       <h5>
         Recent Posts
@@ -46,9 +87,27 @@
             <time>{{ .Date.Format "02/01/2006" }}</time>
         </article>
       {{ end }}
+    </div> -->
+  <!-- </div> -->
+
+  <hr>
+
+  <h2>Photos</h2>
+  <div class="row">
+    {{ range first 3 ( where .Site.RegularPages "Section" "photos" ) }}
+    <div class="four columns" style="margin-bottom: 4%;">
+      {{ partial "index-gallery.html" . }}
     </div>
+    {{ end }}
   </div>
-  <p></p>
+  <div class="row">
+    {{ range first 3 ( after 3 (where .Site.RegularPages "Section" "photos" )) }}
+    <div class="four columns">
+      {{ partial "index-gallery.html" . }}
+    </div>
+    {{ end }}
+  </div>
+
 </div>
 
 {{ partial "footer.html"}}

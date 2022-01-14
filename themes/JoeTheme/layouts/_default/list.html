@@ -12,8 +12,8 @@
     {{ range .Pages }}
       <hr>
       <h4><a href="{{.Permalink}}">{{.Title}}</a></h4>
-      <p><i>{{.Date.Format "02/01/2006"}}</i></p>
-  
+      <small><p><i>{{.Date.Format "02/01/2006"}}</i></p></small>
+
       {{ if isset .Params "thumb" }}
       {{ partial "thumbnail.html" . }}
       <br>
@@ -25,7 +25,11 @@
         </a>
       </small>
       {{ else }}
-      {{ .Summary }}
+      <small>
+        <i>
+          {{ .Summary }}
+        </i>
+      </small>
       <br>
       <small>
         <a href="{{ .Permalink }}">

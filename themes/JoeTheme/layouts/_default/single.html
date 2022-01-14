@@ -4,8 +4,7 @@
 {{ if .Params.Math }}{{ partial "helpers/katex.html" . }}{{ end }}
 
 <div class="container">
-  <div class="row">
-    <div class="twelve columns">
+  <div class="row article-details">
       <h2>{{ .Params.Title }}</h2>
       <p style="margin-bottom: 0px;">
         Published: <i>{{ .Date | time.Format ":date_full" }}</i>
@@ -15,8 +14,6 @@
       </p>
 
       {{ partial "wordcount.html" . }}
-
-    </div>
   </div>
 
   {{ partial "toc.html" . }}

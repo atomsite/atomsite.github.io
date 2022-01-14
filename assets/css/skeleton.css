@@ -190,6 +190,17 @@ p {
   }
 }
 
+/* Index page rules */
+.photowall {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-top:0px;
+  padding-top:0px;
+  margin-bottom: -10px;
+}
+
+
 /* About page styles */
 
 .about-img {
@@ -210,6 +221,14 @@ p {
   }
   .about-hey {
     font-size: 3.0rem;
+  }
+}
+
+/* Article rules */
+
+@media (max-width: 550px) {
+  .article-details {
+    text-align: center;
   }
 }
 
