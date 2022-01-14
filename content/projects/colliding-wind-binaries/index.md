@@ -5,6 +5,7 @@ draft: false
 tags: ["CWBs","PhD","Wolf-Rayet"]
 math: true
 toc: true
+thumb: "etacar"
 ---
 
 
