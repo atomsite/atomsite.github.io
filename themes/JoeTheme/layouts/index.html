@@ -98,16 +98,12 @@
   <h2>Photos</h2>
   <div class="row">
     {{ range first 3 ( where .Site.RegularPages "Section" "photos" ) }}
-    <div class="four columns" style="margin-bottom: 4%;">
       {{ partial "index-gallery.html" . }}
-    </div>
     {{ end }}
   </div>
   <div class="row">
     {{ range first 3 ( after 3 (where .Site.RegularPages "Section" "photos" )) }}
-    <div class="four columns">
       {{ partial "index-gallery.html" . }}
-    </div>
     {{ end }}
   </div>
 

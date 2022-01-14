@@ -6,7 +6,6 @@
 {{ $thumbbig := .Scratch.Get "thumbbig" }}
 {{ $thumbsmall := .Scratch.Get "thumbsmall" }}
 
-<a href="{{ .Permalink }}">
   <picture>
     <source
         srcset="{{ $thumbbig.RelPermalink }}"
@@ -17,11 +16,14 @@
       srcset="{{ $thumbsmall.RelPermalink }}"
       type="image/webp"
       />
-    <img
-      class="inline-img"
-      src="{{ $thumbsmall.RelPermalink }}"
-      loading="lazy"
-    >
-  </picture></a>
+    <a href="{{ .Permalink }}" style="text-decoration: none;">
+      <img
+        class="inline-img"
+        style="width: 30%; "
+        src="{{ $thumbsmall.RelPermalink }}"
+        loading="lazy"
+      >
+    </a>
+  </picture>
 
 {{ end }}

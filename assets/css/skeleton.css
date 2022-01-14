@@ -209,7 +209,7 @@ p {
 .about-name {
   margin-bottom: 0em;
 }
-.about-hey {
+.about-pronouns {
   margin-bottom: 0em;
 }
 @media (max-width: 550px) {
@@ -219,7 +219,10 @@ p {
   .about-name {
     font-size: 3.6rem;
   }
-  .about-hey {
+  .about-pronouns {
+    font-size: 3.0rem;
+  }
+  .about-institution {
     font-size: 3.0rem;
   }
 }
