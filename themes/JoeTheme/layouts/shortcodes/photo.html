@@ -1,8 +1,8 @@
 {{ $original := .Page.Resources.GetMatch (printf "*%s*" (.Get 0)) }}
 {{ $description := .Get 1 }}
 
-{{ .Scratch.Set "big" ($original.Resize "1600x Lanczos webp photo") }}
-{{ .Scratch.Set "big-jpeg" ($original.Resize "1600x Lanczos jpeg") }}
+{{ .Scratch.Set "big" ($original.Resize "1440x Lanczos webp photo") }}
+{{ .Scratch.Set "big-jpeg" ($original.Resize "1440x Lanczos jpeg") }}
 {{ .Scratch.Set "small" ($original.Resize "480x Lanczos webp photo") }}
 {{ .Scratch.Set "small-jpeg" ($original.Resize "480x Lanczos jpeg") }}
 

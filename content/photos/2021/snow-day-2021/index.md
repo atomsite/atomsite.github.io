@@ -2,6 +2,7 @@
 title: "Snow Day 2021"
 date: 2021-11-28T02:23:57Z
 tags: ["urban","landscape"]
+thumb: "wide"
 ---
 
 {{< photo tracks "Snow caked trees by the train tracks" />}}

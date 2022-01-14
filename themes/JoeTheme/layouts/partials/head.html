@@ -21,8 +21,8 @@
 
   {{ $skeletonstyle := resources.Get "css/skeleton.css" | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $skeletonstyle.Permalink }}">
-  {{ $normalizestyle := resources.Get "css/normalize.css" | minify | fingerprint }}
-  <link rel="stylesheet" href="{{ $normalizestyle.Permalink }}">
+  <!-- {{ $normalizestyle := resources.Get "css/normalize.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $normalizestyle.Permalink }}"> -->
   
 
   <!-- Favicon
