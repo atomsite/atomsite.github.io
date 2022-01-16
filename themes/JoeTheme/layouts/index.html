@@ -34,21 +34,22 @@
   <div class="row">
     {{ range first 5 ( where .Site.RegularPages "Section" "posts" ) }}  
       <h4><a href="{{.Permalink}}">{{.Title}}</a></h4>
-      <small><p><i>{{.Date.Format "02/01/2006"}}</i></p></small>
+      <p>
+        <small>
+          <i>{{.Date.Format "02/01/2006"}}</i>
+        </small>
+      </p>
       <p>
         <small>
           <i>
             {{ .Summary }}
           </i>
-        </small>
-        <br>
-        <small>
           <a href="{{ .Permalink }}">
               <i>
                   Keep reading...
               </i>
           </a>
-        </small>  
+        </small>
       </p>
     {{ end }}
   </div>
