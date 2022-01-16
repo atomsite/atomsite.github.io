@@ -1,10 +1,10 @@
 {{ if isset .Params "thumb" }}
-{{ $thumbnail := .Params.thumb }}
-{{ $thumbnail := .Resources.GetMatch (printf "*%s*" ($thumbnail)) }}
-{{ .Scratch.Set "thumbbig" ($thumbnail.Fill "720x720 Lanczos webp photo") }}
-{{ .Scratch.Set "thumbsmall" ($thumbnail.Fill "240X240 Lanczos webp") }}
-{{ $thumbbig := .Scratch.Get "thumbbig" }}
-{{ $thumbsmall := .Scratch.Get "thumbsmall" }}
+  {{ $thumbnail := .Params.thumb }}
+  {{ $thumbnail := .Resources.GetMatch (printf "*%s*" ($thumbnail)) }}
+  {{ .Scratch.Set "thumbbig" ($thumbnail.Fill "720x720 Lanczos webp photo") }}
+  {{ .Scratch.Set "thumbsmall" ($thumbnail.Fill "240X240 Lanczos webp") }}
+  {{ $thumbbig := .Scratch.Get "thumbbig" }}
+  {{ $thumbsmall := .Scratch.Get "thumbsmall" }}
 
   <picture>
     <source
