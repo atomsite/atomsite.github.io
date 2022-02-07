@@ -194,6 +194,9 @@ p {
 .photowall {
   text-align: center;
 }
+.publication-list {
+  max-width: 100%;
+}
 
 
 /* About page styles */
