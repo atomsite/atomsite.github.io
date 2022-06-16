@@ -384,6 +384,29 @@ label > .label-body {
   margin-left: .5rem;
   font-weight: normal; }
 
+  #expend {
+    margin-left: 0px;
+    display:none;  
+  }
+  
+  #expend + .smalldesc {
+    max-height:52px;
+    overflow:hidden;
+    transition:all .3s ease;
+  }
+  
+  #expend:checked + .smalldesc {
+    max-height:250px;  
+  }
+  
+  label {
+    color:var(--accent-col);
+    cursor:pointer;
+  }
+  label:hover {
+    color:var(--highlight-col);
+    text-decoration:none;  
+  }
 
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -429,6 +452,9 @@ pre > code {
 
 /* Tables
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+table {
+  display: block;
+  overflow-x: auto; }
 th,
 td {
   padding: 12px 15px;
