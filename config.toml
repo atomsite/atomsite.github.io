@@ -1,0 +1,52 @@
+baseURL = ''
+languageCode = 'en-us'
+title = 'Atomsite'
+theme = "JoeTheme"
+timeout = "21600s"
+
+
+[menu]
+  [[menu.main]]
+    name = "About"
+    pre = "about"
+    url = "/about/" 
+    weight = 1
+  [[menu.main]]
+    name = "Posts"
+    pre = "posts"
+    url = "/posts/"
+    weight = 2
+  [[menu.main]]
+    name = "Projects"
+    pre = "projects"
+    url = "/projects/"
+    weight = 3
+  [[menu.main]]
+    name = "Photography"
+    pre = "photos"
+    url = "/photos"
+    weight = 4
+  [[menu.main]]
+    name = "Tags"
+    pre = "tag"
+    url = "/tags/"
+    weight = 5
+
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ''
+    lineAnchors = ''
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = true
+    noClasses = true
+    style = 'dracula'
+    tabWidth = 2
+  [markup.tableOfContents]
+    startLevel = 1
+    endLevel = 4
+    ordered = false
+

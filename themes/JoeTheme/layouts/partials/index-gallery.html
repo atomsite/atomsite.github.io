@@ -1,0 +1,30 @@
+{{ if isset .Params "thumb" }}
+  {{ $thumbnail := .Params.thumb }}
+  {{ $thumbnail := .Resources.GetMatch (printf "*%s*" ($thumbnail)) }}
+  {{ .Scratch.Set "thumbbig" ($thumbnail.Fill "720x720 Lanczos webp photo") }}
+  {{ .Scratch.Set "thumbsmall" ($thumbnail.Fill "480x480 Lanczos webp photo") }}
+  {{ $thumbbig := .Scratch.Get "thumbbig" }}
+  {{ $thumbsmall := .Scratch.Get "thumbsmall" }}
+  <span>
+    <picture>
+      <source
+          srcset="{{ $thumbbig.RelPermalink }}"
+          media="(min-width: 720px)"
+          type="image/webp"
+        />
+      <source
+        srcset="{{ $thumbsmall.RelPermalink }}"
+        type="image/webp"
+        />
+      <a href="{{ .Permalink }}" style="text-decoration: none;">
+        <img
+          class="inline-img"
+          style="width: 32%; "
+          src="{{ $thumbsmall.RelPermalink }}"
+          loading="lazy"
+        >
+      </a>
+    </picture>
+  </span>
+
+{{ end }}
