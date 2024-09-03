@@ -11,4 +11,4 @@ Another night out trying to get some shots of the Perseid shower and the aurora,
 {{< photo aurora-2.jpg "Black & white along the duck pond." />}}
 {{< photo aurora-3.jpg "Long exposure of the aurora." />}}
 {{< photo aurora-4.jpg "Very long exposure of the region around Polaris." />}}
-{{< photo aurora-5.jpg "Another shot of the duck pond hide, conjunction of Mars and Jupiter on the left." />}}
+{{< photo aurora-5.jpg "Another shot of the duck pond hide, facing dawn, just an hour away, conjunction of Mars and Jupiter on the left." />}}

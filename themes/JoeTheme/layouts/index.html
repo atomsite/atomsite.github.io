@@ -105,7 +105,7 @@
   <h2>Photos</h2>
 
   <div class="row photowall">
-    {{ range first 9 ( where .Site.RegularPages "Section" "photos" ) }}
+    {{ range ( where .Site.RegularPages "Section" "photos" ) }}
       {{ partial "index-gallery.html" . }}
     {{ end }}
   </div>
